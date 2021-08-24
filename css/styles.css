@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #444CF7;
-    --color-title: #000;
+    --color-title: rgb(0, 0, 0);
     --aling-tittle: left;
     --padding-container:100px 0;
     --width-container: 90%;
@@ -16,9 +16,14 @@
 body{
     font-family: 'Inter', sans-serif;
     
-    background-color: #e5e5f7;
-    opacity: 1;
-    background:repeating-radial-gradient( circle at 0 0, transparent , #e5e5f7 10px ), repeating-linear-gradient( #b9bdfd55, #fdfdfd );
+    /* background-color: #ffffff;
+    opacity: 1; */
+    /* background:repeating-radial-gradient( circle at 0 0, transparent , #e5e5f7 10px ), repeating-linear-gradient( #b9bdfd55, #fdfdfd ); */
+   
+
+   
+   
+   
     
    
 }
@@ -36,9 +41,29 @@ body{
     min-width: 500px;
     position: relative;
     --padding-container:0;
+    background-image: url(/Assets/ian-dooley-DJ7bWa-Gwks-unsplash2.jpg);
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: rgb(255, 255, 255);
+    
+
 
 }
-.hero::after{
+.cortearriba{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color:transparent transparent rgb(255, 255, 255) transparent ;
+    z-index: 1;
+}
+
+/*.hero::after{
     content: "";
     display: block;
     position: absolute;
@@ -50,13 +75,14 @@ body{
     z-index: -1;
     clip-path: polygon(0 100%,100% 100%,100% 0);
     
-}
+}*/
 .hero__container{
     display: grid;
     height: 100%;
     grid-template-columns: 3fr 2fr;
     place-items: center;
     gap: 20px;
+    
  
 }
 
@@ -85,9 +111,13 @@ body{
 
 .main{
     background: #FFF;
+    position: relative;
 
 }
-
+.footer__title{
+    font-size: 2.5rem;
+    text-align: var(--aling-tittle);
+}
 .title{
     font-size: 2.5rem;
     text-align: var(--aling-tittle);
@@ -149,6 +179,7 @@ body{
     display: grid;
     grid-template-columns: 5fr 4fr;
     place-items: center;
+    
 
 }
 
@@ -174,6 +205,7 @@ body{
 
 .card{
     background: #f2f2f2;
+    
 }
 
 .card__copy{
@@ -224,12 +256,28 @@ body{
 }
 
 .footer{
+    color: white;
     position: relative;
-    --padding-container:160px 0 50px;
+    --padding-container:400px 0 50px;
+    background-image: url(/Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
+    background-attachment: fixed;
     
-}
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+   
+    }
+    .corteabajo{
+        position:absolute;
+        top: 0;
+        left: 0;
+        border-width:35vh 100vw 0 0;
+        border-style: solid;
+        border-color:#f2f2f2 transparent transparent transparent;
+        
+    }
 
-.footer::before{
+/* .footer::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -239,39 +287,45 @@ body{
     left: 0;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 
-}
+} */
 
 .footer__contact{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1);
     gap: 20px;
     place-items: center ;
     margin-bottom: 30px;
+    color: white;
 }
 
 .footer__text{
+    
     text-align: left;
     justify-self: left;
+   
 
 }
 
 .footer__copy{
     margin: 20px 0;
     font-weight: 300;
-
+    
+    
 }
+
 
 .footer__social{
  display: flex;
  padding-top: 30px;
  flex-wrap: wrap;
+ 
 
 }
 
 .footer__link{
     width: 60px;
     height: 60px;
-    border: 1px solid #000;
+    background-color: white;
     border-radius: 50%;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -279,6 +333,10 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+.footer__icon
+{
+    fill: white;
 }
 
 .footer_picture{
