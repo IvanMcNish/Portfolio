@@ -19,7 +19,7 @@ body{
     /* background-color: #ffffff;
     opacity: 1; */
     /* background:repeating-radial-gradient( circle at 0 0, transparent , #e5e5f7 10px ), repeating-linear-gradient( #b9bdfd55, #fdfdfd ); */
-   
+   background-image: url(Portfolio/Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
 
    
    
@@ -41,7 +41,7 @@ body{
     min-width: 500px;
     position: relative;
     --padding-container:0;
-    background-image: url(/Assets/ian-dooley-DJ7bWa-Gwks-unsplash2.jpg);
+    /* background-image: url(../Assets/ian-dooley-DJ7bWa-Gwks-unsplash2.jpg); */
     opacity: 0.95;
     background-attachment: fixed;
     background-position: center;
@@ -259,7 +259,7 @@ body{
     color: white;
     position: relative;
     --padding-container:400px 0 50px;
-    background-image: url(/Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
+    /* background-image: url(/Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg); */
     background-attachment: fixed;
     
     background-size: cover;
