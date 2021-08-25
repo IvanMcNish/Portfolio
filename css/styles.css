@@ -42,7 +42,7 @@ body{
     --padding-container:0;
     background-image: url(../Assets/ian-dooley-DJ7bWa-Gwks-unsplash2.jpg);
     opacity: 0.95;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     overflow: hidden;
