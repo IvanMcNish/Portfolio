@@ -78,9 +78,11 @@ body{
 .hero__container{
     display: grid;
     height: 100%;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 0fr;
     place-items: center;
     gap: 20px;
+    justify-content: center;
+    justify-items: start;
     
  
 }
@@ -259,7 +261,7 @@ body{
     position: relative;
     --padding-container:400px 0 50px;
     background-image: url(../Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     
     background-size: cover;
     overflow: hidden;
@@ -292,7 +294,7 @@ body{
     display: grid;
     grid-template-columns: repeat(1);
     gap: 20px;
-    place-items: center ;
+    place-items: Left ;
     margin-bottom: 30px;
     color: white;
 }
