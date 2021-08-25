@@ -258,7 +258,7 @@ body{
     color: white;
     position: relative;
     --padding-container:400px 0 50px;
-    background-image: url(/Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
+    background-image: url(../Assets/avi-richards-Z3ownETsdNQ-unsplash.jpg);
     background-attachment: fixed;
     
     background-size: cover;
